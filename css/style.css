@@ -1,0 +1,56 @@
+#validationMessage, #lootSplitValidationMessage {
+    color:red;
+    background-color: lightgrey;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    margin-top: 1%;
+    background-color: yellow;
+    margin-left: 2.5%;
+}
+
+#lootDisplay {
+    border-color:black;
+    border-width: 1px;
+    border-style: double;
+}
+
+input {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+#lootValue {
+    margin-left: 2.5%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.panel {
+    border-color: black;
+    border-width: 1px;
+    border-style: double;
+}
+
+@media (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .reflection {
+        grid-column: span 2;
+    }
+}

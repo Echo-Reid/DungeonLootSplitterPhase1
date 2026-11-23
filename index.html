@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Echo Reid">
+    <title>Dungeon Loot Splitter</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="javascript/lootStorer.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Dungeon Loot Splitter</h1>
+    </header>
+
+    <main>
+      <section class="panel">
+        <h2>Party Setup</h2>
+        <input type="number" id="partyInput" placeholder="Number of Party Members:">
+      </section>
+
+      <section class="panel">
+        <h2>Add Loot</h2>
+        <!--Two text entries-->
+        <div>
+          <input type="text" id="nameInput" placeholder="Loot Name:">
+          <input type="number" id="valueInput" placeholder="Loot Value:">
+        </div>
+        <!--Submit button-->
+        <div>
+          <button id="submitButton">Add Loot</button>
+          <p id="validationMessage"> </p>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Loot List</h2>
+        <!--Display messages-->
+        <p id="lootValue">Total value of all loot: 0</p>
+      </section>
+
+      <section class="panel">
+        <h2>Split Loot</h2>
+        <button id="splitButton">Split Loot</button>
+        <p id="lootSplitValidationMessage"> </p>
+        <p id="finalSplitMessage"></p>
+      </section>
+
+      <section class="panel reflection">
+        <h2>Logic Explanation</h2>
+        <p>The loot array works by taking each piece of loot, and storing it's name and value. Loops are used to cycle through the arrays and calculate totals. If statements are used to validate user input data.</p>
+      </section>
+    </main>
+  </body>
+</html>
